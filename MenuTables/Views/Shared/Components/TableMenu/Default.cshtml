@@ -1,0 +1,44 @@
+﻿@model List<TblMenu>
+
+
+
+<div class="container-fluid">
+    <div class="row">
+        <!-- Aside Menu -->
+        <nav class="col-md-2 d-none d-md-block bg-light sidebar">
+            <div class="position-sticky">
+                <ul class="nav flex-column">
+                    @foreach (var item in Model)
+                    {
+                        <li class="nav-item">
+                            <a class="nav-link active" href="@item.Url">
+                                <i class="@item.Icon"></i> @item.EnglishPageTitle
+                            </a>
+                        </li>
+                    }
+
+@*                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <i class="fas fa-info-circle"></i> About
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <i class="fas fa-cogs"></i> Services
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <i class="fas fa-envelope"></i> Contact
+                        </a>
+                    </li>*@
+                </ul>
+            </div>
+        </nav>
+
+@*        <!-- Main Content -->
+        <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
+            <!-- Your main content goes here -->
+        </main>*@
+    </div>
+</div>
